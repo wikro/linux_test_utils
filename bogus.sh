@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mkdir -p /var/log/bogus
+
 msg () {
   MSG[0]="Connection timed out"
   MSG[1]="Connection refused"
