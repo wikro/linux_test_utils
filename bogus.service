@@ -1,0 +1,12 @@
+[Unit]
+Description=Bogus service that generates bogus error logs
+
+[Service]
+User=root
+Group=root
+;StandardOutput=append:/var/log/bogus/bogus-out.log
+;StandardError=append/var/log/bogus/bogus-err.log
+ExecStart=/bin/sh /usr/local/bin/bogus.sh
+
+[Install]
+WantedBy=multi-user.target
