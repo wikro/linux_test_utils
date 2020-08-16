@@ -94,7 +94,5 @@ Caused by: java.net.ConnectException: Connection refused: connect
 }
 
 while true; do
-  echo "[$(date '+%F %T')] Error: $(msg)" >&2
-  sleep 0.001
+  echo "[$(date '+%F %T')] Error: $(msg)" >> /var/log/bogus/bogus-err.log
 done
-
