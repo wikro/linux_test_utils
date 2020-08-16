@@ -1,5 +1,5 @@
 /var/log/bogus/*.log {
   size 100M
   missingok
-  copy
+  rotate 10000
 }
